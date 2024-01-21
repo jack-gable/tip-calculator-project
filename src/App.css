@@ -1,0 +1,62 @@
+:root {
+	--primary: hsl(172, 67%, 45%);
+	--white: hsl(0, 0%, 100%);
+	--color-cyan-100: hsl(189, 41%, 97%);
+	--color-cyan-200: hsl(185, 41%, 84%);
+	--color-cyan-300: hsl(184, 14%, 56%);
+	--color-cyan-400: hsl(186, 14%, 43%);
+	--color-cyan-500: hsl(183, 100%, 15%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Space Mono", monospace;
+	background-color: var(--color-cyan-200);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
