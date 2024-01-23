@@ -2,9 +2,9 @@ import styles from "./Title.module.css";
 
 function Title() {
 	return (
-		<div style={styles.title}>
-			<span>Spli</span>
-			<span>tter</span>
+		<div className={styles.wrapper}>
+			<span className={styles.title}>Spli</span>
+			<span className={styles.title}>tter</span>
 		</div>
 	);
 }
