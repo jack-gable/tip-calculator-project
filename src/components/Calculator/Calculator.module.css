@@ -61,9 +61,13 @@
 	font-size: 16px;
 	padding: 6px 12px;
 
-	&:hover,
-	&:focus {
+	&:hover {
 		background-color: var(--color-cyan-200);
+		color: var(--color-cyan-500);
+	}
+
+	&:focus {
+		background-color: var(--primary);
 		color: var(--color-cyan-500);
 	}
 }
@@ -134,5 +138,18 @@
 
 	&:focus {
 		border: 2px solid var(--primary);
+	}
+}
+
+@media (max-width: 375px) {
+	.wrapper {
+		width: 100%;
+		padding-top: 0;
+		gap: 15px;
+	}
+
+	.tipWrapper {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
 	}
 }
